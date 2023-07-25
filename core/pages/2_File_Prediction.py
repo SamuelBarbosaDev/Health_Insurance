@@ -4,7 +4,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Insurance Cost Prediction",
-    page_icon="img/stethoscope.png"
+    page_icon="core/img/stethoscope.png"
 )
 
 st.sidebar.header('File Prediction')
@@ -14,7 +14,7 @@ st.title("Insurance cost prediction")
 st.markdown("Predict medical insurance cost using a csv file:")
 
 # -- Model -- #
-path = r'models/model.pkl'
+path = r'core/models/model.pkl'
 
 with open(path, 'rb') as file:
     model = pickle.load(file)

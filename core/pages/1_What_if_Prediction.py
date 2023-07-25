@@ -33,7 +33,7 @@ smoker = st.selectbox(
 )
 
 # -- Model --:
-path = r'models/model.pkl'
+path = r'core/models/model.pkl'
 
 with open(path, 'rb') as file:
     model = pickle.load(file)
